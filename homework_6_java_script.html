@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Задача 1 -->
+  <script>
+    let arr = [
+      'Пойдем гулять в парк?',
+      'Кажется, дождь собирается. Лучше пойдем в кино!',
+      'Давай, сегодня как раз вышел новый фильм.',
+      'Встречаемся через час у кинотеатра.',
+    ];
+
+    arr.forEach((item, i) => {
+      console.log(`${i % 2 === 0 ? 'Вы' : 'Друг'}: ${item}`);
+    });
+  </script>
+
+<!-- Задача 2 -->
+  <script>
+    let arr2 = [
+      'Пойдем гулять в парк?',
+      'Кажется, дождь собирается. Лучше пойдем в кино!',
+      'Давай, сегодня как раз вышел новый фильм.',
+      'Встречаемся через час у кинотеатра.',
+    ];
+
+    const findText = 'кино';
+   
+    const findFn = (strSearch) => {
+      return arr2.filter(item => item.includes(strSearch));
+    }
+
+    console.log(findFn(findText));
+  </script>
+</body>
+</html>
